@@ -1,0 +1,188 @@
+<component info='CentraStage Component'>											
+  <general>											
+    <name>Ninite - Install and Update Applications</name>											
+    <category>scripts</category>											
+    <description>Ninite script to install specific named applications and update where already installed</description>											
+    <uid>15159389-3ffb-49c6-873f-f3c8be81abc3</uid>											
+    <hash>d8217e9b2593fa1a18d4e61bc27c8ad8</hash>											
+    <version>9</version>											
+    <timeout>3600</timeout>											
+    <securityLevel>5</securityLevel>											
+    <installType>powershell</installType>											
+  </general>											
+  <variable idx='0'>	    <name>dotnet</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Microsoft .NET 3.5 SP1</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='1'>	    <name>dotnet_4</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Microsoft .NET 4.0.30319</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='2'>	    <name>dotnet_35</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Microsoft .NET 3.5 SP1</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='3'>	    <name>dotnet_45</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Microsoft .NET 4.5.50709</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='4'>	    <name>dotnet_451</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Microsoft .NET 4.5.51641</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='5'>	    <name>dotnet_452</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Microsoft .NET 4.5.51650</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='6'>	    <name>dotnet_46</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Microsoft .NET 4.6.00081</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='7'>	    <name>dotnet_461</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Microsoft .NET 4.6.01055</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='8'>	    <name>dotnet_462</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Microsoft .NET 4.6.01590</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='9'>	    <name>7zip</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Great Compression App 16.04</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='10'>	    <name>acrobat</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Acrobat Std/Pro Updates 15/11/10/9</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='11'>	    <name>adaware</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Antivirus Free Trial 11.15.1046.10613</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='12'>	    <name>aim</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>AOL Instant Messenger 7.5.14.8</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='13'>	    <name>aimp</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Music Player 4.12.1880</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='14'>	    <name>air</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Adobe Air 24.0.0.180</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='15'>	    <name>audacity</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Audio Editor 2.1.2</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='16'>	    <name>auslogics</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Great Disk Defrag 7.1.0.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='17'>	    <name>avast</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Avast Free Antivirus 17.1.3394</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='18'>	    <name>avg</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>AVG Free Antivirus 17.1.3006</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='19'>	    <name>avira</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Avira Free Antivirus 15.0.24.146</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='20'>	    <name>bittorrent_sync</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>File Synchronization 1.4.111</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='21'>	    <name>cccp</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Video decoders plus MPC 2015.10.19</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='22'>	    <name>cdburnerxp</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Disc Burner 4.5.7.6521 (requires .NET)</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='23'>	    <name>chrome</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Fast Browser by Google 56.0.2924.87</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='24'>	    <name>citrix_receiver</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Citrix Receiver 4.6.0.65534</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='25'>	    <name>classic_start</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Classic Shell Win8 Start Menu 4.3.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='26'>	    <name>cutepdf</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Print Documents as PDF Files 3.1</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='27'>	    <name>digsby</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Multi-IM Client Build 30295</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='28'>	    <name>dropbox</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Great Online Backup/File Sync 19.4.12</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='29'>	    <name>eclipse</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>IDE for Java 4.6.2 (requires Java)</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='30'>	    <name>emule</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>File Sharing Client 0.50a</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='31'>	    <name>essentials</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Great Antivirus by Microsoft 4.10.209</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='32'>	    <name>evernote</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Online Notes 6.4.2.3788</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='33'>	    <name>everything</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Local File Search Engine 1.3.4.686</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='34'>	    <name>faststone</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>FastStone Image Viewer 6.1</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='35'>	    <name>filezilla</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>FTP Client 3.24.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='36'>	    <name>firefox</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Extensible Browser 51.0.1</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='37'>	    <name>firefox_esr</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Extended Support Release 45.7.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='38'>	    <name>firefox_esr_10</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Extended Support Release 10.0.12</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='39'>	    <name>firefox_esr_17</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Extended Support Release 17.0.11</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='40'>	    <name>firefox_esr_24</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Extended Support Release 24.8.1</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='41'>	    <name>firefox_esr_31</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Extended Support Release 31.8.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='42'>	    <name>firefox_esr_38</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Extended Support Release 38.8.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='43'>	    <name>firefox_esr_45</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Extended Support Release 45.7.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='44'>	    <name>flash</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Flash Player for other browsers 24.0.0.194</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='45'>	    <name>flash_ie</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Flash Player for Internet Explorer 24.0.0.194</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='46'>	    <name>flash_ppapi</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Flash Player for Opera and Chromium</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='47'>	    <name>foobar2000</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Music Player 1.3.14</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='48'>	    <name>foxit_reader</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Alternative PDF Reader 8.2.0.2051</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='49'>	    <name>gimp</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Open Source Image Editor 2.8.20</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='50'>	    <name>glary</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>System Utilities 5.68.0.89</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='51'>	    <name>gom</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Video Player 2.3.10.5266</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='52'>	    <name>google_drive</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Online Backup/File Sync 1.32.4066.7445</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='53'>	    <name>google_earth</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Online Atlas by Google 7.1.8.3036</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='54'>	    <name>google_talk</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Google Talk IM Client 1.0.0.104</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='55'>	    <name>gotomeeting</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Online Meeting 7.31.0.6291</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='56'>	    <name>greenshot</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Screenshot Tool 1.2.9.129</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='57'>	    <name>handbrake</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Convert Videos 1.0.2.0 (requires .NET 4)</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='58'>	    <name>hulu</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Internet TV</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='59'>	    <name>imgburn</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Disc Burner 2.5.8.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='60'>	    <name>infrarecorder</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Disc Burner 0.53.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='61'>	    <name>inkscape</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Vector Graphics Editor 0.92.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='62'>	    <name>irfanview</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Image Viewer 4.44</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='63'>	    <name>itunes</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Music/Media Manager 12.5.5.5</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='64'>	    <name>java</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Java Runtime Environment (JRE) 8u121-b13</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='65'>	    <name>java_6</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Java Runtime Environment (JRE) 6u45-b06</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='66'>	    <name>java_7</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Java Runtime Environment (JRE) 7u79-b15</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='67'>	    <name>java_8</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Java Runtime Environment (JRE) 8u121-b13</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='68'>	    <name>java_x64</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>64-bit Java Runtime (JRE) 8u121-b13</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='69'>	    <name>java_x64_7</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>64-bit Java Runtime (JRE) 7u79-b15</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='70'>	    <name>java_x64_6</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>64-bit Java Runtime (JRE) 6u45-b06</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='71'>	    <name>java_x64_8</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>64-bit Java Runtime (JRE) 8u121-b13</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='72'>	    <name>jdk</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Java Development Kit 8u121-b13</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='73'>	    <name>jdk_6</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Java Development Kit 6u45-b06</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='74'>	    <name>jdk_7</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Java Development Kit 7u79-b15</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='75'>	    <name>jdk_8</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Java Development Kit 8u121-b13</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='76'>	    <name>jdk_x64</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Java Development Kit 8u121-b13</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='77'>	    <name>jdk_x64_7</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Java Development Kit 7u79-b15</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='78'>	    <name>jdk_x64_8</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Java Development Kit 8u121-b13</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='79'>	    <name>klite_codecs</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Video decoders plus Media Player Classic 12.9.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='80'>	    <name>klite_codecs_x64</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Supplemental 64-bit video decoders 10.0.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='81'>	    <name>keepass</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Password Manager Classic 1.32</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='82'>	    <name>keepass_2</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Password Manager 2.35</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='83'>	    <name>keepass_1</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Password Manager Classic 1.32</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='84'>	    <name>kmplayer</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Video Player 4.1.2.2</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='85'>	    <name>launchy</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Hotkey Launcher 2.5</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='86'>	    <name>libreoffice</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Free Office Suite 5.3.0 (JRE recommended)</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='87'>	    <name>logmein</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Remote Access Free/Pro 4.1.8976</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='88'>	    <name>malwarebytes</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Malware Remover 3.0.6.1469</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='89'>	    <name>mediamonkey</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Music Organizer 4.1.14.1813</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='90'>	    <name>messenger</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Windows Live IM Client 2012 (2009 on XP)</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='91'>	    <name>mozy</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>MozyHome Online Backup 2.28.2.432</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='92'>	    <name>musicbee</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Music Manager  and  Player 3.0.6132.15853</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='93'>	    <name>notepad</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Programmer's Editor 7.3.1</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='94'>	    <name>nvda</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Screen Reader 2016.4</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='95'>	    <name>office</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Microsoft Office 12 Standard (Trial Version)</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='96'>	    <name>onedrive</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Online File Sync by Microsoft 17.3.6743.1212</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='97'>	    <name>openoffice</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Free Office Suite 4.1.3 (JRE recommended)</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='98'>	    <name>opera</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Alternative Browser 12.17</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='99'>	    <name>opera_chromium</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Alternative Browser 43.0.2442.806</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='100'>	    <name>opera_12</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Alternative Browser 12.17</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='101'>	    <name>paintdotnet</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Image Editor 4.13.6191.1824 (requires .NET 4.5)</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='102'>	    <name>pdfcreator</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Print Documents as PDF Files 2.4.1.13</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='103'>	    <name>peazip</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>File Compression Tool 6.3.1</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='104'>	    <name>picasa</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Photo Manager by Google 3.9.141.259</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='105'>	    <name>pidgin</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Multi-IM Client 2.11.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='106'>	    <name>putty</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>SSH client 0.67</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='107'>	    <name>python</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Great Programming Language 2.7.13</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='108'>	    <name>qbittorrent</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Free Bittorrent Client 3.3.10</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='109'>	    <name>quicktime</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Video Player 7.7.9</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='110'>	    <name>reader</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Adobe PDF Reader 15.23.20056</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='111'>	    <name>reader_9</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Adobe PDF Reader 9.5.5</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='112'>	    <name>reader_10</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Adobe PDF Reader 10.1.16</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='113'>	    <name>reader_11</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Adobe PDF Reader 11.0.19</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='114'>	    <name>reader_dc</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Adobe PDF Reader 15.23.20056</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='115'>	    <name>realvnc</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Free Remote PC Access 6.0.1.23971</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='116'>	    <name>revo</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>App Uninstaller/Reverse Ninite 2.0.2</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='117'>	    <name>safari</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Alternative Browser by Apple 5.1.7</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='118'>	    <name>sharex</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Screenshot Uploader</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='119'>	    <name>shockwave</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Shockwave Player 12.2.5.195</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='120'>	    <name>silverlight</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Microsoft Silverlight 5.1.50901.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='121'>	    <name>skydrive</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Online File Sync by Microsoft 17.0.2015.0811</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='122'>	    <name>skype</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Internet Telephone 7.32.0.103</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='123'>	    <name>songbird</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Music Manager 2.2.0.2453</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='124'>	    <name>spotify</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Online Music Service 1.0.48.103</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='125'>	    <name>spybot</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Spyware Remover 1.6.2</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='126'>	    <name>spybot_2</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Spyware Remover 2.4.40</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='127'>	    <name>spybot_1</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Spyware Remover 1.6.2</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='128'>	    <name>steam</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>App Store for Games</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='129'>	    <name>sugarsync</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Online Backup/File Sync 3.8.1.10.146697</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='130'>	    <name>sumatrapdf</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Lightweight PDF Reader 3.1.2</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='131'>	    <name>super</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>SUPERAntiSpyware Free 6.0.1236</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='132'>	    <name>teamviewer</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Remote Access Tool 10.0.47484.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='133'>	    <name>teamviewer_7</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Remote Access Tool 7.0.43148.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='134'>	    <name>teamviewer_8</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Remote Access Tool 8.0.44109.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='135'>	    <name>teamviewer_9</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Remote Access Tool 9.0.41110.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='136'>	    <name>teamviewer_10</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Remote Access Tool 10.0.47484.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='137'>	    <name>teamviewer_11</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Remote Access Tool 11.0.73909.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='138'>	    <name>teamviewer_12</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Remote Access Tool 12.0.72365</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='139'>	    <name>teracopy</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Better File Copy 2.3</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='140'>	    <name>thunderbird</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Email Reader by Mozilla 45.7.1</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='141'>	    <name>thunderbird_esr</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Email Reader by Mozilla 17.0.9</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='142'>	    <name>thunderbird_esr_17</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Email Reader by Mozilla 17.0.9</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='143'>	    <name>trillian</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Trillian IM 5.6.0.5</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='144'>	    <name>truecrypt</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Disk Encryption Tool 7.1a</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='145'>	    <name>tweetdeck</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Twitter Client 3.3.7</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='146'>	    <name>utorrent</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>BitTorrent Client 3.4.9.43295</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='147'>	    <name>visual_studio_code</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Programmer's Editor 1.9.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='148'>	    <name>vlc</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Great Video Player 2.2.4</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='149'>	    <name>webex</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>WebEx Connect 731.2014.11.13</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='150'>	    <name>winamp</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Music Player 5.6.6.3516</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='151'>	    <name>windirstat</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Directory Statistics 1.1.2.80</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='152'>	    <name>winmerge</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Compare and Merge Files 2.14.0</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='153'>	    <name>winrar</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Another Compression Tool 5.40 (Trial)</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='154'>	    <name>winscp</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>SCP Client 5.9.3</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='155'>	    <name>xnview</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Image Viewer 2.39</description>	    <defaultVal>false</defaultVal>	</variable>					
+  <variable idx='156'>	    <name>yahoo</name>	    <type>boolean</type>	    <direction>false</direction>	    <description>Yahoo! IM Client 11.5.0.0228</description>	    <defaultVal>false</defaultVal>	</variable>					
+<postCondition idx='0'>											
+    <consequence>warn</consequence>											
+    <resource>stdout</resource>											
+    <text>Partial</text>											
+    <qualifier>found</qualifier>											
+  </postCondition>											
+  <postCondition idx='1'>											
+    <consequence>warn</consequence>											
+    <resource>stdout</resource>											
+    <text>Skip</text>											
+    <qualifier>found</qualifier>											
+  </postCondition>											
+  <postCondition idx='2'>											
+    <consequence>warn</consequence>											
+    <resource>stdout</resource>											
+    <text>Fail</text>											
+    <qualifier>found</qualifier>											
+  </postCondition>											
+</component>											
